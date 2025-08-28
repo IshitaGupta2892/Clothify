@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clothify | Checkout</title>
+  <meta name="description" content="Checkout securely."/>
+  <link rel="stylesheet" href="./assets/css/base.css" />
+  <link rel="stylesheet" href="./assets/css/layout.css" />
+  <link rel="stylesheet" href="./assets/css/components.css" />
+</head>
+<body data-page="checkout">
+  <div id="app-header"></div>
+
+  <main class="container section">
+    <h1>Checkout</h1>
+    <form id="checkout-form" class="checkout">
+      <fieldset>
+        <legend>Contact</legend>
+        <label>Email<input type="email" id="email" required></label>
+        <label>Phone<input type="tel" id="phone" required></label>
+      </fieldset>
+      <fieldset>
+        <legend>Shipping</legend>
+        <label>Full name<input type="text" id="fullName" required></label>
+        <label>Address<input type="text" id="address" required></label>
+        <label>City<input type="text" id="city" required></label>
+        <label>ZIP<input type="text" id="zip" required></label>
+        <label>Country<input type="text" id="country" required></label>
+      </fieldset>
+      <div class="checkout__actions">
+        <a class="btn btn--secondary" href="./cart.html">Back to cart</a>
+        <button class="btn btn--primary" type="submit">Place order</button>
+      </div>
+    </form>
+    <aside class="order-summary" id="order-summary"></aside>
+  </main>
+
+  <div id="app-footer"></div>
+
+  <script defer src="./assets/js/utils.js"></script>
+  <script defer src="./assets/js/cart.js"></script>
+  <script defer src="./assets/js/ui.js"></script>
+  <script defer src="./assets/js/app.js"></script>
+</body>
+</html>

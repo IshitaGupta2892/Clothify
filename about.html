@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clothify | About</title>
+  <meta name="description" content="About Clothify."/>
+  <link rel="stylesheet" href="./assets/css/base.css" />
+  <link rel="stylesheet" href="./assets/css/layout.css" />
+  <link rel="stylesheet" href="./assets/css/components.css" />
+</head>
+<body data-page="about">
+  <div id="app-header">
+    <header class="site-header">
+      <div class="container header__row">
+        <a class="logo" href="./index.html"><span>Clothify</span></a>
+        <nav class="nav">
+          <a href="./shop.html">Shop</a>
+          <a href="./about.html">About</a>
+          <a href="./contact.html">Contact</a>
+          <a href="./faq.html">FAQ</a>
+        </nav>
+        <form action="./shop.html" method="get" class="header-search" role="search" aria-label="Site search">
+          <label class="sr-only" for="q">Search</label>
+          <input type="search" id="q" name="q" placeholder="Search products" />
+          <button class="btn" type="submit">Search</button>
+        </form>
+        <a class="cart-link" href="./cart.html" aria-label="Cart">
+          <span>Cart</span>
+          <span class="cart-badge" id="cart-badge">0</span>
+        </a>
+      </div>
+    </header>
+  </div>
+
+  <main class="container section content">
+    <h1>About Us</h1>
+    <p>Clothify brings modern essentials at fair prices. Built as a demo e-commerce for learning and prototyping.</p>
+    <h2>Our Story</h2>
+    <p>Founded in 2023, Clothify started as a small online store selling basic t-shirts and hoodies. Over the years, we've expanded our product range to include jeans, dresses, and more. Our mission is to provide affordable and stylish clothing for everyone.</p>
+    <h2>Our Values</h2>
+    <ul>
+      <li>Quality: We use only the best materials to ensure our products are durable and comfortable.</li>
+      <li>Value: We offer competitive prices to make our products accessible to everyone.</li>
+      <li>Service: We provide excellent customer service to ensure you have a positive shopping experience.</li>
+    </ul>
+    <h2>Our Team</h2>
+    <p>Our team is made up of passionate individuals who are dedicated to providing the best possible experience for our customers. We are always looking for new talent to join our team.</p>
+  </main>
+
+  <div id="app-footer">
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div>
+            <h4>Clothify</h4>
+            <p class="muted">Modern essentials for everyone.</p>
+          </div>
+          <div>
+            <h4>Shop</h4>
+            <ul>
+              <li><a href="./shop.html?category=Hoodies">Hoodies</a></li>
+              <li><a href="./shop.html?category=Tees">Tees</a></li>
+              <li><a href="./shop.html?category=Jeans">Jeans</a></li>
+              <li><a href="./shop.html?category=Dresses">Dresses</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Help</h4>
+            <ul>
+              <li><a href="./returns.html">Returns & Shipping</a></li>
+              <li><a href="./faq.html">FAQ</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__copy muted">© <span id="year"></span> Clothify. All rights reserved.</div>
+      </div>
+    </footer>
+  </div>
+
+  <script defer src="./assets/js/app.js"></script>
+</body>
+</html>

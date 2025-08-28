@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clothify | FAQ</title>
+  <meta name="description" content="Frequently asked questions."/>
+  <link rel="stylesheet" href="./assets/css/base.css" />
+  <link rel="stylesheet" href="./assets/css/layout.css" />
+  <link rel="stylesheet" href="./assets/css/components.css" />
+</head>
+<body data-page="faq">
+  <div id="app-header">
+    <header class="site-header">
+      <div class="container header__row">
+        <a class="logo" href="./index.html"><span>Clothify</span></a>
+        <nav class="nav">
+          <a href="./shop.html">Shop</a>
+          <a href="./about.html">About</a>
+          <a href="./contact.html">Contact</a>
+          <a href="./faq.html">FAQ</a>
+        </nav>
+        <form action="./shop.html" method="get" class="header-search" role="search" aria-label="Site search">
+          <label class="sr-only" for="q">Search</label>
+          <input type="search" id="q" name="q" placeholder="Search products" />
+          <button class="btn" type="submit">Search</button>
+        </form>
+        <a class="cart-link" href="./cart.html" aria-label="Cart">
+          <span>Cart</span>
+          <span class="cart-badge" id="cart-badge">0</span>
+        </a>
+      </div>
+    </header>
+  </div>
+
+  <main class="container section content">
+    <h1>FAQ</h1>
+    <h3>What is your return policy?</h3>
+    <p>30 days return. Items must be unworn and in original condition.</p>
+    <h3>How long is shipping?</h3>
+    <p>3-7 business days domestic.</p>
+  </main>
+
+  <div id="app-footer">
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div>
+            <h4>Clothify</h4>
+            <p class="muted">Modern essentials for everyone.</p>
+          </div>
+          <div>
+            <h4>Shop</h4>
+            <ul>
+              <li><a href="./shop.html?category=Hoodies">Hoodies</a></li>
+              <li><a href="./shop.html?category=Tees">Tees</a></li>
+              <li><a href="./shop.html?category=Jeans">Jeans</a></li>
+              <li><a href="./shop.html?category=Dresses">Dresses</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Help</h4>
+            <ul>
+              <li><a href="./returns.html">Returns & Shipping</a></li>
+              <li><a href="./faq.html">FAQ</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__copy muted">© <span id="year"></span> Clothify. All rights reserved.</div>
+      </div>
+    </footer>
+  </div>
+
+  <script defer src="./assets/js/app.js"></script>
+</body>
+</html>

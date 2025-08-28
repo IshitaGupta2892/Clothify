@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clothify | Contact</title>
+  <meta name="description" content="Contact Clothify."/>
+  <link rel="stylesheet" href="./assets/css/base.css" />
+  <link rel="stylesheet" href="./assets/css/layout.css" />
+  <link rel="stylesheet" href="./assets/css/components.css" />
+</head>
+<body data-page="contact">
+  <div id="app-header">
+    <header class="site-header">
+      <div class="container header__row">
+        <a class="logo" href="./index.html"><span>Clothify</span></a>
+        <nav class="nav">
+          <a href="./shop.html">Shop</a>
+          <a href="./about.html">About</a>
+          <a href="./contact.html">Contact</a>
+          <a href="./faq.html">FAQ</a>
+        </nav>
+        <form action="./shop.html" method="get" class="header-search" role="search" aria-label="Site search">
+          <label class="sr-only" for="q">Search</label>
+          <input type="search" id="q" name="q" placeholder="Search products" />
+          <button class="btn" type="submit">Search</button>
+        </form>
+        <a class="cart-link" href="./cart.html" aria-label="Cart">
+          <span>Cart</span>
+          <span class="cart-badge" id="cart-badge">0</span>
+        </a>
+      </div>
+    </header>
+  </div>
+
+  <main class="container section contact">
+    <div class="contact-grid">
+      <section class="contact-card">
+        <h1>Contact Us</h1>
+        <p class="muted">We'd love to hear from you. Send us a message or reach us using the details below.</p>
+        <ul class="contact-info">
+          <li><strong>Email:</strong> support@clothify.example</li>
+          <li><strong>Phone:</strong> +91 (958) 870-4482</li>
+          <li><strong>Hours:</strong> Mon–Fri, 9:00 AM – 5:00 PM PT</li>
+          <li><strong>Address:</strong> Ploytechnic Market, Ambala, Haryana</li>
+        </ul>
+        <div class="contact-cta">
+          <a class="btn btn--secondary" href="./faq.html">Visit FAQ</a>
+          <a class="btn" href="./returns.html">Returns & Shipping</a>
+        </div>
+      </section>
+
+      <section class="contact-card">
+        <h2>Send us a message</h2>
+        <form class="contact-form" id="contact-form" novalidate>
+          <label>Full Name
+            <input type="text" name="name" placeholder="Jane Doe" required>
+          </label>
+          <label>Email
+            <input type="email" name="email" placeholder="you@example.com" required>
+          </label>
+          <label>Subject
+            <input type="text" name="subject" placeholder="How can we help?" required>
+          </label>
+          <label>Message
+            <textarea name="message" rows="6" placeholder="Write your message here..." required></textarea>
+          </label>
+          <label class="consent"><input type="checkbox" required> I consent to be contacted about my inquiry.</label>
+          <button class="btn btn--primary" type="submit">Send message</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <div id="app-footer">
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div>
+            <h4>Clothify</h4>
+            <p class="muted">Modern essentials for everyone.</p>
+          </div>
+          <div>
+            <h4>Shop</h4>
+            <ul>
+              <li><a href="./shop.html?category=Hoodies">Hoodies</a></li>
+              <li><a href="./shop.html?category=Tees">Tees</a></li>
+              <li><a href="./shop.html?category=Jeans">Jeans</a></li>
+              <li><a href="./shop.html?category=Dresses">Dresses</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Help</h4>
+            <ul>
+              <li><a href="./returns.html">Returns & Shipping</a></li>
+              <li><a href="./faq.html">FAQ</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__copy muted">© <span id="year"></span> Clothify. All rights reserved.</div>
+      </div>
+    </footer>
+  </div>
+
+  <script defer src="./assets/js/app.js"></script>
+</body>
+</html>

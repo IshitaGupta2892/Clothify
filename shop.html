@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clothify | Shop</title>
+  <meta name="description" content="Browse all products at Clothify. Filter by category, price, size and color."/>
+  <link rel="stylesheet" href="./assets/css/base.css" />
+  <link rel="stylesheet" href="./assets/css/layout.css" />
+  <link rel="stylesheet" href="./assets/css/components.css" />
+</head>
+<body data-page="shop">
+  <div id="app-header"></div>
+
+  <main class="container section">
+    <div class="shop">
+      <aside class="filters" id="filters">
+        <h3>Filters</h3>
+        <div class="filter-group">
+          <label>Category</label>
+          <select id="filter-category"></select>
+        </div>
+        <div class="filter-group">
+          <label>Price</label>
+          <input type="range" id="filter-price" min="0" max="200" value="200" />
+          <div class="muted" id="filter-price-value"></div>
+        </div>
+        <div class="filter-group">
+          <label>Size</label>
+          <div class="chips" id="filter-sizes"></div>
+        </div>
+        <div class="filter-group">
+          <label>Color</label>
+          <div class="chips" id="filter-colors"></div>
+        </div>
+        <button class="btn btn--secondary" id="clear-filters">Clear filters</button>
+      </aside>
+      <section class="catalog">
+        <div class="catalog__toolbar">
+          <div class="muted" id="results-count"></div>
+          <div>
+            <label class="sr-only" for="sort">Sort</label>
+            <select id="sort">
+              <option value="popularity">Most popular</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="newest">Newest</option>
+            </select>
+          </div>
+        </div>
+        <div id="product-grid" class="product-grid"></div>
+        <div id="pagination" class="pagination"></div>
+      </section>
+    </div>
+  </main>
+
+  <div id="app-footer"></div>
+
+  <script defer src="./assets/js/utils.js"></script>
+  <script defer src="./assets/js/api.js"></script>
+  <script defer src="./assets/js/cart.js"></script>
+  <script defer src="./assets/js/ui.js"></script>
+  <script defer src="./assets/js/filters.js"></script>
+  <script defer src="./assets/js/app.js"></script>
+</body>
+</html>

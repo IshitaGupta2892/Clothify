@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clothify | Home</title>
+  <meta name="description" content="Discover the latest fashion at Clothify. Shop hoodies, tees, jeans, dresses and more."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/base.css" />
+  <link rel="stylesheet" href="./assets/css/layout.css" />
+  <link rel="stylesheet" href="./assets/css/components.css" />
+</head>
+<body data-page="home">
+  <div id="app-header"></div>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero__content">
+        <h1>Fresh fits for every season</h1>
+        <p>Quality essentials for your everyday style.</p>
+        <a class="btn btn--primary" href="./shop.html">Shop Now</a>
+      </div>
+      <div class="hero__media">
+        <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=1600&auto=format&fit=crop" alt="Fashion hero" loading="eager" onerror="this.onerror=null;this.src='./assets/img/placeholder.png'" />
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__header">
+        <h2>Best Sellers</h2>
+        <a class="link" href="./shop.html">View all</a>
+      </div>
+      <div id="best-sellers" class="product-grid"></div>
+    </section>
+
+    <section class="section brand-story">
+      <div class="brand-grid">
+        <div class="brand-media">
+          <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1400&auto=format&fit=crop" alt="Crafted apparel" loading="lazy" onerror="this.onerror=null;this.src='./assets/img/placeholder.png'" />
+        </div>
+        <div class="brand-content">
+          <h2>Our Brand Story</h2>
+          <p>Clothify was founded with one belief: great style shouldn’t be complicated. We create timeless pieces using responsible materials and thoughtful design, so you can focus on what matters—living your life in comfort and confidence.</p>
+          <p class="muted">From eco-conscious fabrics to ethical production partners, we’re building a better wardrobe and a better future, one essential at a time.</p>
+          <div class="brand-highlights">
+            <div class="highlight">
+              <strong>Responsible</strong>
+              <span>Eco-minded materials</span>
+            </div>
+            <div class="highlight">
+              <strong>Timeless</strong>
+              <span>Everyday essentials</span>
+            </div>
+            <div class="highlight">
+              <strong>Quality</strong>
+              <span>Made to last</span>
+            </div>
+          </div>
+          <a class="btn btn--primary" href="./about.html">Learn more</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="app-footer"></div>
+
+  <script defer src="./assets/js/utils.js"></script>
+  <script defer src="./assets/js/api.js"></script>
+  <script defer src="./assets/js/cart.js"></script>
+  <script defer src="./assets/js/ui.js"></script>
+  <script defer src="./assets/js/app.js"></script>
+</body>
+</html>
